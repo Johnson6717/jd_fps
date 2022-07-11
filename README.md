@@ -1,6 +1,6 @@
 # jd_fps
 
-Script reconstuido por Johnson
+Para usar el script es /fps, se puede cambiar en el server.lua
 
 [Preview]
 
