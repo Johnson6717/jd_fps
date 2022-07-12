@@ -20,9 +20,9 @@ function OpenFPSMenu()
 
     local elements = {
 		  {label = 'FPS ON',		value = 'fps'},	   
-      {label = 'Pack Grafico',		value = 'fps7'},	       
-      {label = 'Luces Mejoradas',		value = 'fps5'},               
-		  {label = 'Estandar',		value = 'fps2'},									          
+      {label = 'Pack Grafico',		value = 'fps3'},	       
+      {label = 'Luces Mejoradas',		value = 'fps2'},               
+		  {label = 'Estandar',		value = 'fps1'},									          
         }
   
     ESX.UI.Menu.CloseAll()
@@ -34,33 +34,18 @@ function OpenFPSMenu()
         align    = 'top-left',
         elements = elements
         },
-  
             function(data2, menu2)
-  
-  
-  
-  
               if data2.current.value == 'fps' then
                 SetTimecycleModifier('yell_tunnel_nodirect')
-
-             
-
-             elseif data2.current.value == 'fps2' then
+             elseif data2.current.value == 'fps1' then
                 SetTimecycleModifier()
                 ClearTimecycleModifier()
                 ClearExtraTimecycleModifier()
-              elseif data2.current.value == 'fps5' then
+              elseif data2.current.value == 'fps2' then
                 SetTimecycleModifier('tunnel') 
-
-                
-              elseif data2.current.value == 'fps7' then
+              elseif data2.current.value == 'fps3' then
                   SetTimecycleModifier('MP_Powerplay_blend')
                   SetExtraTimecycleModifier('reflection_correct_ambient')    
-                elseif data2.current.value == 'fps8' then    
-                  DisplayRadar(false)
-                elseif data2.current.value == 'fps9' then      
-                  DisplayRadar(true)
-              else
               end
             end,
       function(data2, menu2)
@@ -69,4 +54,3 @@ function OpenFPSMenu()
     )
   
   end
-  
