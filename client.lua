@@ -22,7 +22,7 @@ function OpenFPSMenu()
 		  {label = 'FPS ON',		value = 'fps'},	   
       {label = 'Pack Grafico',		value = 'fps3'},	       
       {label = 'Luces Mejoradas',		value = 'fps2'},               
-		  {label = 'Estandar',		value = 'fps1'},									          
+		  {label = 'Desacrivar FPS ON',		value = 'fps1'},									          
         }
   
     ESX.UI.Menu.CloseAll()
